@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titli Nath - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffcc33, #ff6666);
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background: #ffcc33;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeInDown 1s;
+        }
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            animation: fadeInDown 1.5s;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .container {
+            padding: 50px 20px;
+        }
+        .bio, .portfolio, .contact {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .bio h2, .portfolio h2, .contact h2 {
+            color: #ff6666;
+            margin-top: 0;
+        }
+        .portfolio img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .skills-bar {
+            margin: 20px 0;
+        }
+        .skills-bar h3 {
+            margin: 10px 0;
+        }
+        .bar {
+            position: relative;
+            background: #ccc;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        .bar span {
+            display: block;
+            height: 25px;
+            border-radius: 25px;
+            animation: loadBar 2s;
+        }
+        .c { width: 60%; background: #ff6666; }
+        .cpp { width: 75%; background: #ffcc33; }
+        .js { width: 85%; background: #66ccff; }
+        .java { width: 92%; background: hsl(68, 77%, 38%);}
+        .html { width: 90%; background: #ff9966; }
+        .css { width: 80%; background: #6699ff; }
+        @keyframes loadBar {
+            from { width: 0; }
+            to { width: inherit; }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Titli Nath</h1>
+        <p>Web Developer | Artist</p>
+    </header>
+    <div class="container">
+        <section class="bio">
+            <h2>About Me</h2>
+            <p>Hi, I'm Titli Nath, currently pursuing my BCA degree at JIS University. With a keen interest in web development and technology, I'm constantly exploring the digital realm. I have a solid foundation in languages like C, C++, JavaScript, HTML, and CSS. Recently, I joined a full-stack development bootcamp at Bash School, JIS University. I have achieved a 5-star rating in Java on HackerRank and have almost completed all the Java questions there. Beyond the realms of technology, I am a fervent professional artist, specializing in portrait art and figure drawing.</p>
+        </section>
+        <section class="skills-bar">
+            <h2>Skills</h2>
+            <h3>C</h3>
+            <div class="bar"><span class="c"></span></div>
+            <h3>C++</h3>
+            <div class="bar"><span class="cpp"></span></div>
+            <h3>JavaScript</h3>
+            <div class="bar"><span class="java"></span></div>
+            <h3>Java</h3>
+            <div class="bar"><span class="js"></span></div>
+            <h3>HTML</h3>
+            <div class="bar"><span class="html"></span></div>
+            <h3>CSS</h3>
+            <div class="bar"><span class="css"></span></div>
+        </section>
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <p>Check out some of my works:</p>
+            <img src="https://via.placeholder.com/800x400" alt="Project 1">
+            <img src="https://via.placeholder.com/800x400" alt="Project 2">
+        </section>
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:titlinath3@gmail.com">titlinath3@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/titli-nath-a976b7249/" target="_blank">linkedin.com/in/Titli Nath</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Titli Nath. All rights reserved.</p>
+    </footer>
+</body>
+</html>
